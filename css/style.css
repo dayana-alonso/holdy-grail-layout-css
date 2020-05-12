@@ -12,16 +12,18 @@
   padding: var(--space);
 }
 
-.HolyGrail-content {
-  padding: 3em;
-  margin-top: var(--space);
-
-}
-
 .HolyHeader {
   display: flex;
   justify-content: center;
+  background-color: darkgrey;
 }
+
+
+.HolyGrail-content {
+  padding: 3em;
+  margin-top: var(--space);
+}
+
 
 .HolyGrail-header,
 .HolyGrail-footer {
@@ -39,6 +41,13 @@
   background: rgba(147, 128, 108, 0.1);
 }
 
+.HolyFooter {
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+
+}
+
 @media (--break-lg) {
   .HolyGrail-body {
     flex-direction: row;
@@ -52,5 +61,9 @@
 
   .HolyGrail-nav, .HolyGrail-ads {
     flex: 0 0 12em;
+  }
+
+  .HolyFooter {
+    flex-direction: row;
   }
 } 
