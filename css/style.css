@@ -1,0 +1,56 @@
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color:rgba(147, 128, 108, 0.1);
+}
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  padding: var(--space);
+}
+
+.HolyGrail-content {
+  padding: 3em;
+  margin-top: var(--space);
+
+}
+
+.HolyHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.HolyGrail-header,
+.HolyGrail-footer {
+  flex: none; 
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+.HolyGrail-nav,
+.HolyGrail-ads {
+  padding: 2em;
+  border-radius: 3px;
+  background: rgba(147, 128, 108, 0.1);
+}
+
+@media (--break-lg) {
+  .HolyGrail-body {
+    flex-direction: row;
+  }
+
+  .HolyGrail-content {
+    flex: 1;
+    padding: 0 var(--space-lg);
+    margin: 0;
+  }
+
+  .HolyGrail-nav, .HolyGrail-ads {
+    flex: 0 0 12em;
+  }
+} 
