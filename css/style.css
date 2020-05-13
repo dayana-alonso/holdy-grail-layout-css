@@ -1,6 +1,6 @@
 .HolyGrail {
   display: flex;
-  min-height: 100vh;
+  min-height: 100%;
   flex-direction: column;
   background-color:white;
 }
@@ -16,14 +16,12 @@
 .HolyGrail-body {
   display: flex;
   flex: 1 0 auto;
-  padding: var(--space);
   font-family: Arial, Helvetica, sans-serif;
   font-size: .80em;
 }
 
 .HolyGrail-content {
-  padding: 3em;
-  margin-top: var(--space);
+  padding: 2em;
 }
 
 .HolyGrail-header,
@@ -49,14 +47,13 @@
   background-color: cadetblue;
   margin: 1em 0;
   height: 100px;
-  color: #fff;
   font-size: 11px;
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .HolyGrail-body {
-    flex-direction: row;
+    flex-direction: column;
   }
   .HolyGrail-content {
     flex: 1;
